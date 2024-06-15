@@ -1,0 +1,9 @@
+.footer{
+    height: 100px;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}

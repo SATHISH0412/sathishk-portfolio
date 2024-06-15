@@ -1,0 +1,45 @@
+.navitems > li{
+    display: flex;
+    padding: 10px 15px;
+    margin: 0px;
+    
+}
+
+.navitems{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    max-width: 900px;
+    margin:  0 auto;
+}
+
+.navigation{
+    text-align: center;
+    background-color: rgb(238, 233, 226);
+    position: sticky;
+    top: 0;
+    padding: none;
+
+    height: 3rem;
+
+}
+.navitems a{
+    text-decoration: none;
+    font-size: 1.3em;
+    color: black;
+    text-wrap: nowrap;
+}
+
+.navitems li:hover{
+   background-color: azure;
+    border-bottom: 2px solid rgb(62, 233, 47);
+    transition: fade ;
+}
+
+@media (max-width:900px) {
+    .navitems a{
+        font-size: 1em;
+        z-index: 1;
+    }
+}
