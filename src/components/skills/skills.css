@@ -1,0 +1,74 @@
+.aboutme{
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.185);
+    padding-bottom: 20px;
+}
+
+.about{
+    height: 40%;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about h2{
+    font-size:2rem;
+    margin-bottom: 40px;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    padding-bottom: 20px;
+}
+
+.skills{
+    height: 60%;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.skills h2{
+    font-size:2rem;
+    margin-bottom: 40px;
+    border-bottom: 2px solid rgb(7, 7, 7);
+    padding-bottom: 20px;
+
+}
+
+.skiholder{
+    border: 4px double rgba(0, 0, 0, 0.548);
+    width: 150px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    color: red;
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px black ;
+}
+
+
+.skiholder:hover{
+    transform: scale(1.1);
+    transition: 0.5s ease;
+}
+
+
+.skillval{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.skillval span{
+    text-transform: capitalize;
+}
+
+.skiholder img{
+    max-height: 40px;
+}
