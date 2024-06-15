@@ -1,5 +1,5 @@
 .hero{
-    width: 100%;
+    width: 100vw;
     height:calc(100vh - 80px);
     background-color: rgba(225, 225, 236, 0.37);
     position: relative;
@@ -16,14 +16,32 @@
 }
 .mypic{
     position: absolute;
-    left: 10%;
+    left: 5%;
+    bottom: 0px;
     object-fit: cover;
-    height: 100%;
-    width: 80%;
-    
 }
 
+@media (max-width:600px) {
+    .mypic{
+        left:-100px;
+    }
 
+    .hero h2{
+        font-size:24px;
+    }
+    .hero h6{
+        font-size: 1.3em;
+    }
+    .pic{
+        width: 10%;
+    }
+
+    .intro{
+        position: absolute;
+        left:30%;
+    }
+    
+}
 .intro{
     background-color:transparent;
     width: 50%;
@@ -33,6 +51,7 @@
     justify-content: center;
     position: absolute;
     z-index: 1;
+    overflow: hidden;
     right: 0;
     padding-left: 10px;
     
@@ -78,3 +97,4 @@
     }
     
 }
+
