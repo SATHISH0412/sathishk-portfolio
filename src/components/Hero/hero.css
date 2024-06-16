@@ -1,100 +1,77 @@
 .hero{
-    width: 100vw;
-    height:calc(100vh - 80px);
-    background-color: rgba(225, 225, 236, 0.37);
-    position: relative;
-    margin-top: 20px;
+    box-sizing: border-box;
+    height: 80vh;
     display: flex;
-    background: radial-gradient(rgba(69, 12, 82, 0.603) 10%,rgba(29, 21, 29, 0.459)0%,rgba(75, 19, 80, 0.685)10%,rgb(10, 25, 56));
-}
-
-.pic{
-    height: 100%;
-    width: 50%;
-    background-color: transparent;
-    position: relative;
-}
-.mypic{
-    position: absolute;
-    left: 5%;
-    bottom: 0px;
-    object-fit: cover;
-}
-
-@media (max-width:600px) {
-    .mypic{
-        left:-100px;
-    }
-
-    .hero h2{
-        font-size:24px;
-    }
-    .hero h6{
-        font-size: 1.3em;
-    }
-    .pic{
-        width: 10%;
-    }
-
-    .intro{
-        position: absolute;
-        left:30%;
-    }
+    background-image: url(../../assets/back2.png);
+    background-repeat:no-repeat;
+    background-size: cover;
     
 }
+
+.picture{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+}
+
+.me{
+   max-width: 500px;
+}
+
 .intro{
-    background-color:transparent;
-    width: 50%;
+    background-color: transparent;
+    width: 60%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    position: absolute;
-    z-index: 1;
-    overflow: hidden;
-    right: 0;
-    padding-left: 10px;
-    
+    backdrop-filter: blur(3px);
 }
 
+.name,.passion{
+    margin-top: 0rem;
+    margin-bottom:1rem;
+}
+
+.name{
+    font-size: 3rem;
+    font-weight: 500;
+    color: red;
+}
+
+.passion{
+    font-size: 2.3rem;
+}
+
+.desc{
+    font-size: 1.3rem;
+}
+
+@media (max-width:600px) {
+    .name{
+        font-size: 2rem;
+    }
+    .desc{
+        font-size: 1rem;
+    }
+    .passion{
+        font-size: 1.5rem;
+    }
+    
+}
 
 .connect{
-    width: 100%;
     text-align: center;
-    margin-top: 2rem;
 }
 
-
-
-.hero h2,h6,p{
-    margin-top: 0;
-    margin-bottom: 0.9rem;
+.connect button{
+    background-color: rgb(68, 243, 68);
+    text-transform: capitalize;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 5px 15px;
 }
-.hero h2{
-    font-size: 3rem;
-    color: rgb(228, 30, 162);
-  
-}
-.hero h6{
-    font-size: 2em;
-    color: rgb(17, 16, 16);
-    text-wrap: nowrap;
-    overflow: hidden;
-    border-right: 2px solid red;
-    width: 350px;
-    animation: typing 4s steps(20) infinite;
-}
-.hero p{
-    font-size: 1.3em;
-}
-
-@keyframes typing {
-    from{
-        width: 0%;
-    }
-    to{
-        width:350px;
-    }
-    
-}
-

@@ -1,0 +1,21 @@
+.cards{
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    /* background-image: url(../../assets/back2.png);
+    background-repeat: no-repeat;
+    background-size: cover; */
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    backdrop-filter: blur(3px);
+}
+
+@media (max-width:900) {
+   .cards{
+    height:auto;
+   }
+    
+}

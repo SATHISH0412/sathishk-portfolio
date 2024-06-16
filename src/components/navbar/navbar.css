@@ -1,45 +1,68 @@
-.navitems > li{
-    display: flex;
-    padding: 10px 15px;
-    margin: 0px;
-    
+.navbar{
+   background-color: aqua;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0px;
+   height: 4rem;
+   overflow: hidden;
+  
+}
+.navbar .logo:hover{
+    background-color: black;
 }
 
-.navitems{
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
-    max-width: 900px;
-    margin:  0 auto;
+
+.navitems ul{
+display: flex;
 }
 
-.navigation{
-    text-align: center;
-    background-color: rgb(238, 233, 226);
-    position: sticky;
-    top: 0;
-    padding: none;
-
-    height: 3rem;
-
+.navitems li{
+    list-style-type: none;
+    padding: 20px;
 }
 .navitems a{
     text-decoration: none;
-    font-size: 1.3em;
-    color: black;
-    text-wrap: nowrap;
+    text-transform: capitalize;
 }
-
 .navitems li:hover{
-   background-color: azure;
-    border-bottom: 2px solid rgb(62, 233, 47);
-    transition: fade ;
+    background-color: white;
+    
 }
 
-@media (max-width:900px) {
-    .navitems a{
-        font-size: 1em;
-        z-index: 1;
-    }
+
+.dropdown{
+    position: absolute;
+    background-color: rgba(231, 243, 243, 0.5);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    backdrop-filter: blur(5px);
 }
+.dropitem{
+    background-color: yellow;
+    width: 400px;
+    height: 300px;
+}
+
+.dropdown ul{
+    list-style-type: none;
+    margin-right:0rem;
+}
+.dropitem li{
+    text-align: center;
+    margin-left: 0px;
+}
+
+.dropitem a{
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+.dropitem li:hover
+{
+    background-color: white;
+}
+
+

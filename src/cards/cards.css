@@ -1,0 +1,63 @@
+.caritem{
+        width: 270px;
+        height: 300px;
+        background-color: rgba(255, 255, 255, 0.171);
+        border-radius: 20px;
+        color: white;
+        backdrop-filter: blur(5px);
+        box-shadow: 2px 3px 5px rgb(22, 21, 21);
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        transition: 1s ease;
+}
+
+.caritem .imgbox{
+    height: 240px;
+    width: 250px;
+    margin: auto;
+    background-color:transparent;
+    position: absolute;
+    top: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.5s ease-in;
+    object-fit: cover;
+    object-position: center;
+}
+
+.caritem .imgbox img{
+    height: 240px;
+    width: 250px;
+}
+
+.caritem .content{
+    position: absolute;
+    top:250px;
+    height: 40px;
+    overflow: hidden;
+    transition: 0.5s linear;
+}
+
+.caritem:hover .content{
+    top:150px;
+    height: 200px;
+}
+
+.content p{
+    text-transform: capitalize;
+}
+.content h3{
+    text-transform: uppercase;
+}
+
+
+.caritem:hover{
+    height: 370px;
+    z-index: 1;
+}
+
+.caritem:hover  .imgbox{
+    top:-100px;
+    transform: scale(0.8);
+}

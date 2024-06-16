@@ -2,16 +2,33 @@ import './navbar.css'
 
 function Navbar(){
     return(<>
-        <div className="navigation Navbar">
-            <ul className="navitems">
-                <li><a href="#">HOME</a></li>
-                <li><a href="#aboutme">ABOUT ME</a></li>
-                <li><a href="#">PROJECTS</a></li>
-                <li><a href="#">CONTACT</a></li>
-            </ul>
-            </div>    
-    
-    </>);
+         <section className='navbar'>
+         <div className="logo">
+                <img src="df" alt="images" />
+            </div>
+            <div className="navitems">
+                <ul>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">home</a></li>
+                </ul>
+            </div>
+         </section>
+         <section className=" dropdown">
+        
+            <div className="dropitem">
+                <ul>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">home</a></li>
+                </ul>
+            </div>
+         </section>
+
+     </>);
+
 }
 
 export default Navbar;

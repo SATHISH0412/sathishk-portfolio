@@ -1,21 +1,24 @@
 import { useState } from 'react';
-import  {BrowserRouter,Routes,Route} from 'react-router-dom'
+import  {BrowserRouter,Routes,Route} from 'react-router-dom';
+
 
 import './App.css';
-import Navbar from './components/navbar/Navabar.jsx';
 import Hero from './components/Hero/Hero.jsx';
-import Skills from './components/skills/Skills.jsx';
-import Footer from './components/footer/Footer.jsx';
+import Title from './components/title/Title.jsx'
+import Projects from './components/projects/Projects';
+import Skills from './components/skills/Skills.jsx'
+
 
 function App() {
   
 
   return (
       <>
-      <Navbar/>
       <Hero/>
       <Skills/>
-      <Footer/>
+      <Title title="projects"/>
+      <Projects/>
+     
       </>
 
     
