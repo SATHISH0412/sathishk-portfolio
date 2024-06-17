@@ -1,15 +1,26 @@
+
+
+
 .navbar{
-   background-color: aqua;
+   background-color: rgba(116, 150, 150, 0.767);
    display: flex;
    justify-content: space-between;
    align-items: center;
    padding: 0px;
    height: 4rem;
    overflow: hidden;
+   font-size: 1.4rem;
+   position: sticky;
+   top: 0;
+   z-index: 1;
   
 }
 .navbar .logo:hover{
     background-color: black;
+}
+
+.navitems{
+    display: flex;
 }
 
 
@@ -23,27 +34,38 @@ display: flex;
 }
 .navitems a{
     text-decoration: none;
-    text-transform: capitalize;
+    text-transform: uppercase;
+    color: black;
+
 }
 .navitems li:hover{
     background-color: white;
     
 }
 
-
 .dropdown{
     position: absolute;
-    background-color: rgba(231, 243, 243, 0.5);
-    width: 100%;
-    display: flex;
+    margin: auto;
+    background-color: rgba(238, 238, 238, 0.329);
+    width:100%;
+    display:none;
     justify-content: center;
+    align-items: center;
     height: 100%;
     backdrop-filter: blur(5px);
-}
+    top: 15%;
+} 
+
+
 .dropitem{
-    background-color: yellow;
+    background-color: rgb(255, 255, 255);
     width: 400px;
     height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    
 }
 
 .dropdown ul{
@@ -52,17 +74,60 @@ display: flex;
 }
 .dropitem li{
     text-align: center;
+    
     margin-left: 0px;
+    padding-bottom: 20px;
+}
+
+ul{
+    padding-left: 0;
+    margin-left: 0;
 }
 
 .dropitem a{
     text-decoration: none;
     font-size: 1.4rem;
+    width: 100%;
+    color: black;
+    
 }
 
 .dropitem li:hover
 {
-    background-color: white;
+    width:400px;
+    background-color: rgba(202, 191, 191, 0.87);
 }
 
+.menu{
+    display: none;
+}
 
+@media (max-width:800px) {
+    .menu {
+        display: block;
+    }
+   .navitems{
+    display: none;
+   }
+    
+}
+
+.display{
+    display:flex;
+    z-index: 1;
+}
+
+@media (max-width:900px) {
+    .navbar{
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+    
+}
+
+.navbar button{
+    background-color: transparent;
+    border: none;
+}
+
+ 

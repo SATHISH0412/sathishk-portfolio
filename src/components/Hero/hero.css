@@ -5,19 +5,46 @@
     background-image: url(../../assets/back2.png);
     background-repeat:no-repeat;
     background-size: cover;
-    
+    margin-top: 3rem;
 }
 
 .picture{
     width: 40%;
-    height: 100%;
     display: flex;
     justify-content: center;
+    
     backdrop-filter: blur(5px);
+    animation: transe 2s ease;
 }
 
+
+@keyframes transe {
+    from{
+        transform: translate(-200px);
+    }
+    to{
+
+    }
+    
+}
+
+@media (max-width:600px) {
+        .me{
+            position: absolute;
+            height: 100%;
+           
+        }
+    .intro{
+        position: absolute;
+        width: 80%;
+        left: 20%;
+    }
+
+    
+}
 .me{
    max-width: 500px;
+   
 }
 
 .intro{
@@ -27,7 +54,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    backdrop-filter: blur(3px);
+   
 }
 
 .name,.passion{
@@ -54,7 +81,7 @@
         font-size: 2rem;
     }
     .desc{
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
     .passion{
         font-size: 1.5rem;

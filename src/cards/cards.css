@@ -3,8 +3,8 @@
         height: 300px;
         background-color: rgba(255, 255, 255, 0.171);
         border-radius: 20px;
-        color: white;
-        backdrop-filter: blur(5px);
+        color: rgb(0, 0, 0);
+        backdrop-filter: blur(20px);
         box-shadow: 2px 3px 5px rgb(22, 21, 21);
         text-align: center;
         display: flex;
@@ -13,7 +13,7 @@
 }
 
 .caritem .imgbox{
-    height: 240px;
+    height: 220px;
     width: 250px;
     margin: auto;
     background-color:transparent;
@@ -33,14 +33,15 @@
 
 .caritem .content{
     position: absolute;
-    top:250px;
-    height: 40px;
+    top:225px;
+    height:70px;
     overflow: hidden;
     transition: 0.5s linear;
+    z-index: 1;
 }
 
 .caritem:hover .content{
-    top:150px;
+    top:120px;
     height: 200px;
 }
 
@@ -49,6 +50,7 @@
 }
 .content h3{
     text-transform: uppercase;
+    display: inline;
 }
 
 
@@ -60,4 +62,11 @@
 .caritem:hover  .imgbox{
     top:-100px;
     transform: scale(0.8);
+}
+
+.read{
+    text-transform: capitalize;
+    text-decoration: none;
+    color: rgb(27, 27, 243);
+    font-weight: 500;
 }
