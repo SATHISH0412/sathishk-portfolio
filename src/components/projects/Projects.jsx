@@ -5,7 +5,7 @@ import Cards from "../../cards/Cards";
 
 function Projects(){
  return <>
-        <div className="cards">
+        <div className="cards" id="projects">
         <Cards/>
         </div>
  

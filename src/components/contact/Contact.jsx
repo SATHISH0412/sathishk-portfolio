@@ -1,10 +1,11 @@
 import Title from '../title/Title'
 import './contact.css'
+import {Link} from 'react-scroll'
 
 export default function Contact(){
     return<>
-    <Title title="contact form"/>
-    <section className="contacts">
+    <Title title="contact form" />
+    <section className="contacts" id='contact' >
        <div className='formcontainer'>
        <form action="/feedback" className="feed">
         <input type="text" placeholder="Enter Your Name" />
