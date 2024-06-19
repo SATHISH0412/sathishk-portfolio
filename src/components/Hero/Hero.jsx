@@ -13,9 +13,10 @@ function Hero(){
             <div className="intro">
                 <p className='name'>SATHISH K</p>
                 <h6 className='passion'>UI / UX DESIGNER</h6>
-                <p className='desc' >Hi ! i am tech passionate person, i love tech. so that is why i become a ux designer.</p>
+                <p className='desc' >Hi ! i am sathish.i am self taught and motivated person. 
+                  i always wanted to explore new things.</p>
                     <div className='connect'>
-                        <button>Hireme</button>
+                       <a href="https://wa.me//+918148913281?text=Hi sathish..!!!"> <button>Hire me 📞</button></a>
                     </div>            
             
             </div>

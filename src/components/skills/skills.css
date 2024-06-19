@@ -9,6 +9,7 @@
     width: 70%;
     margin: auto;
     text-align: center;
+    text-transform: capitalize;
     display: flex;
     flex-direction: column;
     justify-content: center;

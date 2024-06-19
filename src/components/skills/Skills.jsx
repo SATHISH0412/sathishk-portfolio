@@ -28,10 +28,9 @@ export default function Skills() {
             <div className="aboutme" id="aboutme">
                 <div className="about">
                     <b><h2>ABOUT ME</h2></b>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt voluptates
-                        beatae suscipit recusandae, error blanditiis? Totam corporis illum ab quidem
-                        vero reiciendis sequi consequuntur
-                        quaerat qui, voluptatibus necessitatibus, eos quisquam.</p>
+                    <p>I am sathish k currently pursuing Master's in computer application at University 
+                        of Madras.I am a self motivated and quick learner. I am currently learning the MERN 
+                        technologies. I am now  doing intership at Naso tech.</p>
                 </div>
                 <div className="skills">
                     <h2>SKILLS</h2>

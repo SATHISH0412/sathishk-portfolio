@@ -1,6 +1,7 @@
 import React from 'react';
 import './navbar.css';
 import imgs from '../../assets/burger.svg'
+import logo from '../../../public/Designer.ico'
 
 function Navbar() {
 
@@ -13,7 +14,7 @@ function Navbar() {
         <>
             <section className='navbar'>
                 <div className="logo">
-                    <img src="df" alt="logo" />
+                    <img src={logo} alt="logo"  height={40} width={40} style={{borderRadius:"50%"}}/>
                 </div>
                 <div className="navitems">
                     <ul>

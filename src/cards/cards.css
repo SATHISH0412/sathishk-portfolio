@@ -1,3 +1,5 @@
+
+
 .caritem{
         width: 270px;
         height: 300px;
@@ -42,7 +44,8 @@
 
 .caritem:hover .content{
     top:120px;
-    height: 200px;
+    height: 220px;
+    padding: 0px 5px;
 }
 
 .content p{
