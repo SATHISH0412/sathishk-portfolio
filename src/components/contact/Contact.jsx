@@ -1,6 +1,5 @@
 import Title from '../title/Title'
 import './contact.css'
-import {Link} from 'react-scroll'
 
 export default function Contact(){
     return<>
